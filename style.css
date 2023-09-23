@@ -5705,17 +5705,26 @@ blockquote {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.experience-component-grid {
+.education-component-grid {
   grid-column-gap: 3rem;
   grid-row-gap: 3rem;
   grid-template-rows: auto;
   grid-template-columns: 1fr;
 }
 
-.experience-content {
+.education-component-grid .courses {
+  margin-top: 30px;
+}
+
+.education-content {
   grid-column-gap: 2rem;
-  grid-row-gap: 2rem;
   grid-template-rows: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.education-content p {
+  color: #555;
 }
 
 .portfolio-component-grid {
@@ -6251,6 +6260,10 @@ blockquote {
     grid-row-gap: 4rem;
     grid-template-columns: 1fr;
   }
+
+  .education-content {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -6564,7 +6577,7 @@ blockquote {
     grid-template-columns: 1fr;
   }
 
-  .experience-content {
+  .education-content {
     grid-template-columns: 1fr;
   }
 
