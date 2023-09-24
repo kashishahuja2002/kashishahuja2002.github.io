@@ -5202,10 +5202,7 @@ blockquote {
 .hamburger-menu.w--open {
   background-color: rgba(0, 0, 0, 0);
   box-shadow: inset -8px -7px 10px #fff, inset 7px 8px 10px rgba(0, 0, 0, .15);
-
   position: fixed;
-  right: 8%;
-  top: 30px;
 }
 
 .header-nav-content {
@@ -7175,7 +7172,21 @@ blockquote {
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.section-home-skills .skills div {
+  width: 70px;
+  margin: 15px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-home-skills .skills img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 
 /* Experience Section */
