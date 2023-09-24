@@ -4586,7 +4586,7 @@ blockquote {
   line-height: 1;
 }
 
-.section-home-about {
+.section-home-about, .section-home-experience {
   overflow: hidden;
 }
 
@@ -5529,13 +5529,13 @@ blockquote {
   padding-bottom: 2rem;
 }
 
-.about-component-grid {
+.about-component-grid, .experience-component-grid {
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
   grid-template-rows: auto;
 }
 
-.shape-image-about {
+.shape-image-about, .shape-image-experience {
   width: 34rem;
   height: 34rem;
   background-color: #f1f1f1;
@@ -5543,7 +5543,7 @@ blockquote {
   box-shadow: -7px -7px 15px #fff, 7px 7px 15px rgba(0, 0, 0, .12);
 }
 
-.shape-image-about._2 {
+.shape-image-about._2, .shape-image-experience._2 {
   width: 31rem;
   height: 31rem;
   margin-top: 1.5rem;
@@ -5556,11 +5556,11 @@ blockquote {
   overflow: hidden;
 }
 
-.image-about-wrapper {
+.image-about-wrapper, .image-experience-wrapper {
   position: relative;
 }
 
-.about-image {
+.about-image, .experience-image {
   width: 100%;
   height: 100%;
   background-image: url("https://assets.website-files.com/6369473e4802a71c2ac95742/636d1122a62e060bfcaf84b1_about-image-template.jpeg");
@@ -5575,7 +5575,7 @@ blockquote {
   overflow: hidden;
 }
 
-.padding-vertical-about {
+.padding-vertical-about, .padding-vertical-experience {
   padding-top: 10rem;
   padding-bottom: 6rem;
 }
@@ -5670,6 +5670,12 @@ blockquote {
 .about-component {
   grid-template-rows: auto;
   grid-template-columns: 1fr 0fr;
+}
+
+.experience-component {
+  grid-column-gap: 3rem;
+  grid-template-rows: auto;
+  grid-template-columns: 2fr 5fr;
 }
 
 .form-wrap {
@@ -6195,16 +6201,16 @@ blockquote {
     padding-bottom: 4rem;
   }
 
-  .service-component-grid, .about-component-grid {
+  .service-component-grid, .about-component-grid, .experience-component-grid {
     grid-template-columns: 1fr;
   }
 
-  .shape-image-about {
+  .shape-image-about, .shape-image-experience {
     width: 90vw;
     height: 90vw;
   }
 
-  .shape-image-about._2 {
+  .shape-image-about._2, .shape-image-experience._2 {
     width: 84vw;
     height: 84vw;
     margin-top: 3vw;
@@ -6571,7 +6577,7 @@ blockquote {
     padding-top: 10rem;
   }
 
-  .about-component {
+  .about-component, .experience-component {
     grid-column-gap: 3rem;
     grid-row-gap: 3rem;
     grid-template-columns: 1fr;
@@ -7141,4 +7147,44 @@ blockquote {
   font-weight: 400;
   font-style: normal;
   font-display: swap;
+}
+
+/* Experience Section */
+
+.experience-component .tab {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #f1f1f1;
+}
+
+.experience-component .tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  border-left: 3px solid #ddd;
+}
+
+.experience-component .tab button:hover {
+  background-color: #ddd;
+  font-weight: 500;
+}
+
+.experience-component .tab button.active {
+  border-left: 3px solid #555;
+  font-weight: 500;
+}
+
+.experience-component .exp-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
 }
