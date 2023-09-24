@@ -1005,6 +1005,18 @@ textarea.w-input, textarea.w-select {
   .header-image {
     top: -18% !important;
   }
+
+  .experience-component .exp-heading {
+    flex-direction: column;
+  }
+
+  .extraCurricular-component-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .footer-bottom {
+    padding: 1.5rem !important;
+  }
 }
 
 .w-widget {
@@ -5172,6 +5184,10 @@ blockquote {
   padding: 16px;
   transition: all .4s cubic-bezier(.215, .61, .355, 1);
   box-shadow: -8px -6px 15px #fff, 6px 8px 15px rgba(0, 0, 0, .15);
+
+  position: absolute;
+  right: 8%;
+  top: 30px;
 }
 
 .hamburger-menu:hover {
@@ -5186,6 +5202,10 @@ blockquote {
 .hamburger-menu.w--open {
   background-color: rgba(0, 0, 0, 0);
   box-shadow: inset -8px -7px 10px #fff, inset 7px 8px 10px rgba(0, 0, 0, .15);
+
+  position: fixed;
+  right: 8%;
+  top: 30px;
 }
 
 .header-nav-content {
@@ -7149,8 +7169,16 @@ blockquote {
   font-display: swap;
 }
 
-/* Experience Section */
+/* Skills section */
+.section-home-skills .skills {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+/* Experience Section */
 .experience-component .tab {
   display: flex;
   flex-direction: column;
