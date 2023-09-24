@@ -5697,7 +5697,7 @@ blockquote {
   display: inline-block;
 }
 
-.achievements-component-grid {
+.extraCurricular-component-grid {
   width: 100%;
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
@@ -6231,7 +6231,7 @@ blockquote {
     grid-template-columns: 1fr;
   }
 
-  .achievements-component-grid {
+  .extraCurricular-component-grid {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -6873,7 +6873,7 @@ blockquote {
     flex-direction: column;
   }
 
-  .achievements-component-grid {
+  .extraCurricular-component-grid {
     grid-column-gap: 1.5rem;
     grid-row-gap: 1.5rem;
   }
