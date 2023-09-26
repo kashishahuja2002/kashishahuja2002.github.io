@@ -937,6 +937,10 @@ textarea.w-input, textarea.w-select {
   .footer-bottom {
     padding: 1.5rem !important;
   }
+
+  .padding-xhuge {
+    padding: 3rem 10rem 2rem;
+  }
 }
 
 .w-widget {
@@ -7181,6 +7185,7 @@ blockquote {
     display: flex;
     box-shadow: 6px 5px 15px rgba(0, 0, 0, .15), -8px -6px 15px #fff;
     margin: 10px;
+    -webkit-tap-highlight-color: transparent;
   }
 
   .experience-component .tab .tablinks:hover {
