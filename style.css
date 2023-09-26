@@ -920,7 +920,8 @@ textarea.w-input, textarea.w-select {
   }
 
   .header-image {
-    top: -18% !important;
+    background-position: -220px !important;
+    top: -22% !important;
   }
 
   .experience-component .exp-heading {
@@ -5326,14 +5327,18 @@ blockquote {
 .header-image {
   width: 100%;
   height: 100%;
-  background-image: url("./assets/images/image.jpeg");
-  background-position: -50px;
+  background-image: url("./assets/images/img.jpg");
   background-repeat: no-repeat;
-  background-size: 116%;
   position: absolute;
-  top: -12%;
   bottom: 0%;
-  left: -12%;
+  background-position: -315px;
+  background-size: cover;
+  top: -18%;
+  left: -15%;
+  /* background-position: -50px;
+  background-size: 116%;
+  top: -12%;
+  left: -12%; */
   right: 0%;
   overflow: hidden;
   transform: translate(4vh, 10vh)scale(1.4)rotate(-20deg);
@@ -7080,15 +7085,29 @@ blockquote {
 
 .section-home-skills .skills div {
   width: 70px;
-  margin: 15px;
+  margin: 30px;
   align-items: center;
   display: flex;
   flex-direction: column;
 }
 
-.section-home-skills .skills img {
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+/* .section-home-skills .skills img {
+  -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+} */
+
+@media screen and (max-width: 577px) {
+  .section-home-skills .skills div {
+    width: 60px;
+    margin: 25px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .section-home-skills .skills div {
+    width: 50px;
+    margin: 20px;
+  }
 }
 
 /* Experience Section */
@@ -7099,7 +7118,7 @@ blockquote {
   background-color: #f1f1f1;
 }
 
-.experience-component .tab button {
+.experience-component .tab .tablinks {
   display: block;
   background-color: inherit;
   color: black;
@@ -7114,12 +7133,12 @@ blockquote {
   border-left: 3px solid #ddd;
 }
 
-.experience-component .tab button:hover {
+.experience-component .tab .tablinks:hover {
   background-color: #ddd;
   font-weight: 500;
 }
 
-.experience-component .tab button.active {
+.experience-component .tab .tablinks.active {
   border-left: 3px solid #555;
   font-weight: 500;
 }
@@ -7128,4 +7147,109 @@ blockquote {
   display: flex;
   justify-content: space-between;
   margin-bottom: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .experience-component .tab {
+    flex-direction: row;
+    overflow: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .experience-component .tab::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+  }
+
+  .experience-component .tab .tablinks {
+    height: 50px;
+    color: gray;
+    white-space: nowrap;
+    background-color: #f1f1f1;
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+    transition: all .4s;
+    display: flex;
+    box-shadow: 6px 5px 15px rgba(0, 0, 0, .15), -8px -6px 15px #fff;
+    margin: 10px;
+  }
+
+  .experience-component .tab .tablinks:hover {
+    border-color: rgba(255, 255, 255, .05);
+    box-shadow: 10px 13px 20px rgba(0, 0, 0, .15), -13px -10px 20px #fff;
+  }
+
+  .experience-component .tab .tablinks:active {
+    box-shadow: inset -8px -7px 10px #fff, inset 8px 7px 10px rgba(0, 0, 0, .15);
+  }
+
+  .experience-component .tab .tablinks.active {
+    border: none;
+    box-shadow: inset -8px -7px 10px #fff, inset 8px 7px 10px rgba(0, 0, 0, .15);
+  }
+}
+
+/* Projects Section */
+.mySlides {
+  display: none
+}
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+.next {
+  right: 0; /* Position the "next button" to the right */
+}
+
+.prev:hover svg path, .next:hover svg path{
+  fill: #555;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 20px 2px 0px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
