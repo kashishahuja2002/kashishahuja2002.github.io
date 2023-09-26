@@ -28,10 +28,12 @@ audio:not([controls]) {
 
 a {
   background-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
 }
 
 a:active, a:hover {
   outline: 0;
+  -webkit-tap-highlight-color: transparent;
 }
 
 abbr[title] {
@@ -4031,7 +4033,7 @@ blockquote {
 }
 
 .padding-xhuge {
-  padding: 5rem 10rem;
+  padding: 5rem 10rem 2rem;
 }
 
 .max-width-xxsmall {
