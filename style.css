@@ -939,7 +939,7 @@ textarea.w-input, textarea.w-select {
   }
 
   .padding-xhuge {
-    padding: 3rem 10rem 2rem;
+    padding: 3rem 10rem 2rem !important;
   }
 }
 
@@ -6302,7 +6302,7 @@ blockquote {
   }
 
   .padding-xhuge {
-    padding: 8rem;
+    padding: 5rem 10rem 2rem;
   }
 
   .margin-bottom {
